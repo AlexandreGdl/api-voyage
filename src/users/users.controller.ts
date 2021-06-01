@@ -1,6 +1,6 @@
 import {
   Body,
-  Controller, Get, Post, UseGuards,
+  Controller, Get, NotFoundException, Post, UseGuards,
 } from '@nestjs/common';
 
 import { ApiTags } from '@nestjs/swagger';
@@ -35,6 +35,7 @@ export class UsersController {
   @Post('/login')
   async login(@Body() body: { email: string, password: string }): Promise<{ token: string }> {
     const user = await this.userService.login(body);
+    if (!user) throw new NotFoundException('User not found');
     const jwt = await this.jwtService.sign(user.toJSON(), { expiresIn: '30d' });
     return { token: `Bearer ${jwt}` };
   }
@@ -45,6 +46,5 @@ export class UsersController {
     const jwt = await this.jwtService.sign(user.toJSON(), { expiresIn: '30d' });
     return { token: `Bearer ${jwt}` };
   }
-
 
 }
