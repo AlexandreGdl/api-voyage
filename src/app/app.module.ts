@@ -37,7 +37,7 @@ import {VoyagesModule} from "../voyages/voyages.module";
     ConfigModule,
     UsersModule,
     NotesModule,
-    PlacesModule
+    PlacesModule,
     VoyagesModule
   ],
   controllers: [AppController],
