@@ -1,5 +1,6 @@
 import { IsDateString, IsNotEmpty, IsString } from 'class-validator';
 import {ApiProperty} from "@nestjs/swagger";
+import {Prop} from "@nestjs/mongoose";
 
 export class CreateUserDto {
     @IsString()
@@ -17,8 +18,8 @@ export class CreateUserDto {
     @ApiProperty({ required: true })
     readonly password: string;
 
-    @IsDateString()
+    @IsString()
     @IsNotEmpty()
     @ApiProperty({ required: true })
-    readonly birthDate: Date;
+    readonly phoneNumber: string;
 }

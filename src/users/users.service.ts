@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import {ConflictException, Injectable} from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Users } from './users.schema';
@@ -10,17 +10,23 @@ export class UsersService {
     @InjectModel('users') private usersModel: Model<Users>,
   ) {}
 
+  async getUserWithEmail(email: string): Promise<Users | undefined> {
+    return this.usersModel.findOne({
+      email
+    });
+  };
+
   /**
    * Create a user in database
    * @param {CreateUserDto} user that should be created
    */
   async signUp(user: CreateUserDto): Promise<Users> {
+    const userExist = await this.getUserWithEmail(user.email);
+    if (userExist) throw new ConflictException('user already exist');
     await this.usersModel.create({
       ...user
     });
-    return this.usersModel.findOne({
-      username: user.username
-    });
+    return this.getUserWithEmail(user.email);
   }
 
   /**
@@ -28,9 +34,8 @@ export class UsersService {
    * @param body
    */
   async login(body: {email: string, password: string}): Promise<Users> {
-    const user = await this.usersModel.findOne({
-      email: body.email,
-      password: body.password
+    const user = this.usersModel.findOne({
+
     });
 
     return user;
