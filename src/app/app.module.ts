@@ -8,6 +8,8 @@ import {ConfigService} from "../config/config.service";
 import {PassportModule} from "@nestjs/passport";
 import {UsersSchema} from "../users/users.schema";
 import {JwtModule} from "@nestjs/jwt";
+import { NotesModule } from 'src/notes/notes.module';
+import { PlacesModule } from 'src/places/places.module';
 import {VoyagesModule} from "../voyages/voyages.module";
 
 @Module({
@@ -34,6 +36,8 @@ import {VoyagesModule} from "../voyages/voyages.module";
     }),
     ConfigModule,
     UsersModule,
+    NotesModule,
+    PlacesModule
     VoyagesModule
   ],
   controllers: [AppController],
