@@ -8,6 +8,7 @@ import {ConfigService} from "../config/config.service";
 import {PassportModule} from "@nestjs/passport";
 import {UsersSchema} from "../users/users.schema";
 import {JwtModule} from "@nestjs/jwt";
+import {VoyagesModule} from "../voyages/voyages.module";
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import {JwtModule} from "@nestjs/jwt";
     }),
     ConfigModule,
     UsersModule,
+    VoyagesModule
   ],
   controllers: [AppController],
   providers: [
