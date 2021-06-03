@@ -1,6 +1,5 @@
 import { IsDateString, IsNotEmpty, IsString } from 'class-validator';
 import {ApiProperty} from "@nestjs/swagger";
-import {Prop} from "@nestjs/mongoose";
 
 export class CreateUserDto {
     @IsString()
