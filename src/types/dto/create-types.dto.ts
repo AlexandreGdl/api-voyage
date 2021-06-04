@@ -9,5 +9,5 @@ export class CreateTypesDto {
     readonly name: string;
 
     @IsOptional()
-    readonly secret_admin_key?: string;
+    readonly admin_secret_key?: string;
 }

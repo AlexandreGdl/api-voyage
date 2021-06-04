@@ -31,8 +31,8 @@ export class TypesController {
     @Post('')
     @UseGuards(AuthGuard('jwt'))
     async createType(@AuthUser() user: Users, @Body() body: CreateTypesDto): Promise<Types> {
-        if (!body.secret_admin_key) throw new UnauthorizedException('Bad request');
-        if (body.secret_admin_key && body.secret_admin_key !== process.env.admin_secret_key) throw new UnauthorizedException('Bad request');
+        if (!body.admin_secret_key) throw new UnauthorizedException('Bad request');
+        if (body.admin_secret_key && body.admin_secret_key !== this.env.get('admin_secret_key')) throw new UnauthorizedException('Bad request');
         return this.typesService.createType(body.name);
     }
 
