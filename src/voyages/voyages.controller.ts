@@ -36,7 +36,6 @@ export class VoyagesController {
     @UseGuards(AuthGuard('jwt'))
     async createVoyage(@AuthUser() user: Users,@Body() newVoyages: CreateVoyageDto): Promise<Voyages> {
         return this.voyagesService.createVoyage(newVoyages, user._id);
-        return {} as Voyages;
     }
 
     @Put('/add-members')
