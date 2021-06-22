@@ -10,7 +10,7 @@ export class Places extends Document {
   typeId: ObjectId;
 
   @Prop()
-  voyageId: ObjectId;
+  voyageId?: ObjectId;
 
   @Prop()
   position: Location;
@@ -20,6 +20,9 @@ export class Places extends Document {
 
   @Prop({required: false})
   mediaId?: ObjectId;
+
+  @Prop()
+  isGlobal?: boolean
 }
 
 export const PlacesSchema = SchemaFactory.createForClass(Places);

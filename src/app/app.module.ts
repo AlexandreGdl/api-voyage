@@ -11,6 +11,7 @@ import {JwtModule} from "@nestjs/jwt";
 import { NotesModule } from 'src/notes/notes.module';
 import { PlacesModule } from 'src/places/places.module';
 import {VoyagesModule} from "../voyages/voyages.module";
+import {TypesModule} from "../types/types.module";
 
 @Module({
   imports: [
@@ -38,7 +39,8 @@ import {VoyagesModule} from "../voyages/voyages.module";
     UsersModule,
     NotesModule,
     PlacesModule,
-    VoyagesModule
+    VoyagesModule,
+    TypesModule
   ],
   controllers: [AppController],
   providers: [

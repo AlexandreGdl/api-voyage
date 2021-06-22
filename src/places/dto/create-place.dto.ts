@@ -1,4 +1,4 @@
-import { IsMongoId, IsNotEmpty, IsString } from 'class-validator';
+import {IsBoolean, IsMongoId, IsNotEmpty, IsOptional, IsString} from 'class-validator';
 import { ObjectId } from 'mongodb';
 import { Location } from '../interface/location.interface';
 
@@ -8,8 +8,8 @@ export class CreatePlaceDto {
     typeId: ObjectId;
 
     @IsMongoId()
-    @IsNotEmpty()
-    voyageId: ObjectId;
+    @IsOptional()
+    voyageId?: ObjectId;
 
     @IsNotEmpty()
     position: Location;
@@ -17,4 +17,11 @@ export class CreatePlaceDto {
     @IsString()
     @IsNotEmpty()
     name: string;
+
+    @IsBoolean()
+    @IsOptional()
+    isGlobal?: boolean;
+
+    @IsOptional()
+    readonly admin_secret_key?: string;
 }

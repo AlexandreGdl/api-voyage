@@ -12,9 +12,9 @@ export class PlacesService {
   ) {}
 
   async createPlaces(newPlaces: CreatePlaceDto): Promise<Places> {
-    const createdNote = await this.placesModel.create({
+    const createdPlace = await this.placesModel.create({
       ...newPlaces
     });
-    return createdNote;
+    return createdPlace;
   }
 }
