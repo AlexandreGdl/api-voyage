@@ -1,7 +1,7 @@
 import {
-    Body,
-    Controller, Get, NotFoundException, Post, UseGuards,
-  } from '@nestjs/common';
+  Body,
+  Controller, Get, NotFoundException, Post, UnauthorizedException, UseGuards,
+} from '@nestjs/common';
   
   import { ApiTags } from '@nestjs/swagger';
   import { JwtService } from '@nestjs/jwt';
@@ -35,8 +35,11 @@ import { PlacesService } from './places.services';
     @Post('')
     @UseGuards(AuthGuard('jwt'))
     async createPlaces(@AuthUser() user: Users, @Body() newPlaces: CreatePlaceDto): Promise<Places> {
-        return this.placesService.createPlaces(newPlaces)
-        return {} as Places;
+      if (newPlaces.isGlobal || !newPlaces.voyageId) {
+        if (!newPlaces.admin_secret_key) throw new UnauthorizedException('Bad request');
+        if (newPlaces.admin_secret_key && newPlaces.admin_secret_key !== this.env.get('admin_secret_key')) throw new UnauthorizedException('Bad request');
+      }
+      return this.placesService.createPlaces(newPlaces);
     }
   }
   
