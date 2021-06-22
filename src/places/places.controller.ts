@@ -4,7 +4,6 @@ import {
 } from '@nestjs/common';
   
   import { ApiTags } from '@nestjs/swagger';
-  import { JwtService } from '@nestjs/jwt';
   import { ConfigService } from '../config/config.service';
   import { AuthGuard } from '@nestjs/passport';
 import { Places } from './schema/places.schema';
