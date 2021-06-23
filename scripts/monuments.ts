@@ -6,8 +6,8 @@ export const monuments = [
     name: "Statue du Christ Roi",
     type: "monuments",
     localisation: {
-      long: 38.682400720950135, 
-      lat: -9.170401578787454
+      lat: 38.682400720950135, 
+      long: -9.170401578787454
     }
   },
 
@@ -15,8 +15,8 @@ export const monuments = [
     name: "Monument to King José I",
     type: "monuments",
     localisation: {
-      long: 38.7102663685455,
-      lat: -9.13578857202268
+      lat: 38.7102663685455,
+      long: -9.13578857202268
     }
   },
 
@@ -24,8 +24,8 @@ export const monuments = [
     name: "Monumento a Amália Rodrigues",
     type: "monuments",
     localisation: {
-      long:38.71673936756865, 
-      lat: -9.12898183904616
+      lat:38.71673936756865, 
+      long: -9.12898183904616
     }
   },
 
@@ -33,8 +33,8 @@ export const monuments = [
     name: "Statue de Jean 1er",
     type: "monuments",
     localisation: {
-      long: 38.717569196846604, 
-      lat: -9.13749025526681
+      lat: 38.717569196846604, 
+      long: -9.13749025526681
     }
   },
 
@@ -42,8 +42,8 @@ export const monuments = [
     name: "Monumento aos Restauradores",
     type: "monuments",
     localisation: {
-      long: 38.71889690365115, 
-      lat: -9.140893621755069
+      lat: 38.71889690365115, 
+      long: -9.140893621755069
     }
   },
 
@@ -51,8 +51,8 @@ export const monuments = [
     name: "Monument Deads of Great War",
     type: "monuments",
     localisation: {
-      long: 38.72287987607368, 
-      lat: -9.14429698824333
+      lat: 38.72287987607368, 
+      long: -9.14429698824333
     }
   },
 
@@ -60,8 +60,8 @@ export const monuments = [
     name: "Monument to Alfonso d'Albuquerqe",
     type: "monuments",
     localisation: {
-      long: 38.70063877315443, 
-      lat: -9.198538141649978
+      lat: 38.70063877315443, 
+      long: -9.198538141649978
     }
   },
 
@@ -69,8 +69,8 @@ export const monuments = [
     name: "Padrão-Memória do Chão Salgado",
     type: "monuments",
     localisation: {
-      long: 38.69951823601656, 
-      lat: -9.203962262549204
+      lat: 38.69951823601656, 
+      long: -9.203962262549204
     }
   },
 
@@ -78,8 +78,8 @@ export const monuments = [
     name: "Monastère des Hiéronymites",
     type: "monuments",
     localisation: {
-      long: 38.70018226013397, 
-      lat: -9.207684694645737
+      lat: 38.70018226013397, 
+      long: -9.207684694645737
     }
   },
 
@@ -87,8 +87,8 @@ export const monuments = [
     name: "Padrão dos Descobrimentos",
     type: "monuments",
     localisation: {
-      long: 38.695699977696506, 
-      lat: -9.205663945793335
+      lat: 38.695699977696506, 
+      long: -9.205663945793335
     }
   },
 
@@ -96,8 +96,8 @@ export const monuments = [
     name: "Monument Gago Coutinho e Sacadura Cabral",
     type: "monuments",
     localisation: {
-      long: 38.693790772097955, 
-      lat: -9.214066006811228
+      lat: 38.693790772097955, 
+      long: -9.214066006811228
     }
   },
   
@@ -105,8 +105,8 @@ export const monuments = [
     name: "Tour de Belem",
     type: "monuments",
     localisation: {
-      long: 38.6931266886406, 
-      lat: -9.21661853167742
+      lat: 38.6931266886406, 
+      long: -9.21661853167742
     }
   },
   
@@ -114,8 +114,8 @@ export const monuments = [
     name: "Monument to the Overseas Combatants",
     type: "monuments",
     localisation: {
-      long: 38.694537858618325, 
-      lat: -9.21789479411052
+      lat: 38.694537858618325, 
+      long: -9.21789479411052
     }
   },
   
@@ -123,8 +123,8 @@ export const monuments = [
     name: "Cruzeiro de Algés",
     type: "monuments",
     localisation: {
-      long: 38.70134428750406, 
-      lat: -9.232146391280109
+      lat: 38.70134428750406, 
+      long: -9.232146391280109
     }
   },
 
@@ -132,8 +132,8 @@ export const monuments = [
     name: "Rotunda Entrecampos",
     type: "monuments",
     localisation: {
-      long: 38.753094189639306, 
-      lat: -9.149374297003536
+      lat: 38.753094189639306, 
+      long: -9.149374297003536
     }
   },
 
@@ -141,8 +141,8 @@ export const monuments = [
     name: "Estátua de Santo António",
     type: "monuments",
     localisation: {
-      long: 38.75770654283063, 
-      lat: -9.145149585449442
+      lat: 38.75770654283063, 
+      long: -9.145149585449442
     }
   },
 
@@ -150,8 +150,8 @@ export const monuments = [
     name: "Estátua Cosme Damião",
     type: "monuments",
     localisation: {
-      long: 38.7552905854743,
-      lat: -9.18148210481465
+      lat: 38.7552905854743,
+      long: -9.18148210481465
     }
   },
   
@@ -159,8 +159,8 @@ export const monuments = [
     name: "Gonçalves Zarco",
     type: "monuments",
     localisation: {
-      long: 38.71047073809691,  
-      lat: -9.202324015148179
+      lat: 38.71047073809691,  
+      long: -9.202324015148179
     }
   },
   
@@ -168,8 +168,8 @@ export const monuments = [
     name: "Quinta da Fidalga",
     type: "monuments",
     localisation: {
-      long: 38.639031251854966,
-      lat: -9.103560043139899
+      lat: 38.639031251854966,
+      long: -9.103560043139899
     }
   },
 
@@ -177,8 +177,8 @@ export const monuments = [
     name: "Château Saint-Georges",
     type: "monuments",
     localisation: {
-      long: 38.71682960946302, 
-      lat: -9.126687099189942
+      lat: 38.71682960946302, 
+      long: -9.126687099189942
     }
   },
 ]

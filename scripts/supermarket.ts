@@ -5,8 +5,8 @@ export const supermarkets = [
     name: "Intermarché",
     type: "supermarket",
     localisation: {
-      long: 38.79576771095571,
-      lat: -9.216294434895701
+      lat: 38.79576771095571,
+      long: -9.216294434895701
     }
   },
 
@@ -14,8 +14,8 @@ export const supermarkets = [
     name: "Minipreço",
     type: "supermarket",
     localisation: {
-      long: 38.80780780913943,
-      lat: -9.229684020962557
+      lat: 38.80780780913943,
+      long: -9.229684020962557
     }
   },
 
@@ -23,8 +23,8 @@ export const supermarkets = [
     name: "Intermarché",
     type: "supermarket",
     localisation: {
-      long: 38.77301975308803,
-      lat: -9.279809138033357
+      lat: 38.77301975308803,
+      long: -9.279809138033357
     }
   },
 
@@ -32,8 +32,8 @@ export const supermarkets = [
     name: "Intermarché",
     type: "supermarket",
     localisation: {
-      long: 38.774090407947455,
-      lat: -9.31105150552269
+      lat: 38.774090407947455,
+      long: -9.31105150552269
     }
   },
 
@@ -41,8 +41,8 @@ export const supermarkets = [
     name: "Supermercado MiniPreço",
     type: "supermarket",
     localisation: {
-      long: 38.78988070034078,
-      lat: -9.32238115527157
+      lat: 38.78988070034078,
+      long: -9.32238115527157
     }    
   },
 
@@ -50,8 +50,8 @@ export const supermarkets = [
     name: "Coviran",
     type: "supermarket",
     localisation: {
-      long: 38.800804773313125,
-      lat: -9.34309960117032
+      lat: 38.800804773313125,
+      long: -9.34309960117032
     }   
   },
 
@@ -60,8 +60,8 @@ export const supermarkets = [
     name: "VIP Supermercados",
     type: "supermarket",
     localisation: {
-      long: 38.70120242537652,
-      lat: -9.44008827897762
+      lat: 38.70120242537652,
+      long: -9.44008827897762
     }   
   },
 
@@ -70,8 +70,8 @@ export const supermarkets = [
     name: "Intermarché",
     type: "supermarket",
     localisation: {
-      long: 38.71513368845824,
-      lat: -9.337434785798395
+      lat: 38.71513368845824,
+      long: -9.337434785798395
     }   
   },
 
@@ -80,8 +80,8 @@ export const supermarkets = [
     name: "SPAR Monte Estoril",
     type: "supermarket",
     localisation: {
-      long: 38.71566945205711,
-      lat: -9.408159266048973
+      lat: 38.71566945205711,
+      long: -9.408159266048973
     }   
   },
 
@@ -90,8 +90,8 @@ export const supermarkets = [
     name: "Geacioac",
     type: "supermarket",
     localisation: {
-      long: 38.72584819740347,
-      lat: -9.395799648141105
+      lat: 38.72584819740347,
+      long: -9.395799648141105
     }   
   },
   
@@ -99,8 +99,8 @@ export const supermarkets = [
     name: "Mercearia d'Aldeia",
     type: "supermarket",
     localisation: {
-      long: 38.732276131673466,
-      lat: -9.450387960567522
+      lat: 38.732276131673466,
+      long: -9.450387960567522
     }   
   },
   
@@ -108,8 +108,8 @@ export const supermarkets = [
     name: "MiniMercado",
     type: "supermarket",
     localisation: {
-      long: 38.70602509322701,
-      lat: -9.274606714026103
+      lat: 38.70602509322701,
+      long: -9.274606714026103
     }   
   },
   
@@ -117,8 +117,8 @@ export const supermarkets = [
     name: "Minipreço Express",
     type: "supermarket",
     localisation: {
-      long: 38.71486580568947,
-      lat: -9.146547326647855
+      lat: 38.71486580568947,
+      long: -9.146547326647855
     }   
   },
 
@@ -127,8 +127,8 @@ export const supermarkets = [
     name: "Minipreço Market",
     type: "supermarket",
     localisation: {
-      long: 38.71084743563508,
-      lat: -9.178133016856853
+      lat: 38.71084743563508,
+      long: -9.178133016856853
     }   
   },
   
@@ -136,8 +136,8 @@ export const supermarkets = [
     name: "Minipreço Dafundo",
     type: "supermarket",
     localisation: {
-      long: 38.70602509340418,
-      lat: -9.240961074555182
+      lat: 38.70602509340418,
+      long: -9.240961074555182
     }   
   },
   
@@ -145,8 +145,8 @@ export const supermarkets = [
     name: "Pingo Doce",
     type: "supermarket",
     localisation: {
-      long: 38.71995541681231,
-      lat: -9.13796425865628
+      lat: 38.71995541681231,
+      long: -9.13796425865628
     }   
   },
   
@@ -154,8 +154,8 @@ export const supermarkets = [
     name: "Minipreço Supermarket",
     type: "supermarket",
     localisation: {
-      long: 38.71707581293397,
-      lat: -9.150667199283813
+      lat: 38.71707581293397,
+      long: -9.150667199283813
     }   
   },
   
@@ -163,8 +163,8 @@ export const supermarkets = [
     name: "Continente Bom Dia Duque de Loulé",
     type: "supermarket",
     localisation: {
-      long: 38.730468334152384,
-      lat: -9.146547326647857
+      lat: 38.730468334152384,
+      long: -9.146547326647857
     }   
   },
   
@@ -172,8 +172,8 @@ export const supermarkets = [
     name: "mini preco",
     type: "supermarket",
     localisation: {
-      long: 38.73408388451846,
-      lat: -9.14122582449308
+      lat: 38.73408388451846,
+      long: -9.14122582449308
     }   
   },
   
@@ -181,8 +181,8 @@ export const supermarkets = [
     name: "Continente Bom Dia",
     type: "supermarket",
     localisation: {
-      long: 38.73716365345293,
-      lat: -9.141740808572575
+      lat: 38.73716365345293,
+      long: -9.141740808572575
     }   
   },
   
@@ -190,8 +190,8 @@ export const supermarkets = [
     name: "Lidl Lisboa",
     type: "supermarket",
     localisation: {
-      long: 38.7419838947521,
-      lat: -9.149980553844486
+      lat: 38.7419838947521,
+      long: -9.149980553844486
     }   
   },
 
@@ -200,8 +200,8 @@ export const supermarkets = [
     name: "MyAuchan",
     type: "supermarket",
     localisation: {
-      long: 38.685851063487526,
-      lat: -9.152555502963638
+      lat: 38.685851063487526,
+      long: -9.152555502963638
     }   
   },
 
@@ -210,8 +210,8 @@ export const supermarkets = [
     name: "Grocery store",
     type: "supermarket",
     localisation: {
-      long: 38.71425263113673,
-      lat: -9.129381216732536
+      lat: 38.71425263113673,
+      long: -9.129381216732536
     }   
   },
 

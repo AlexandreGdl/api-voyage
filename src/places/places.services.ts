@@ -11,6 +11,19 @@ export class PlacesService {
     @InjectModel('places') private placesModel: Model<Places>,
   ) {}
 
+  async getGlobalPlaces(): Promise<Places[]> {
+    return this.placesModel.aggregate([
+      { $match: { isGlobal: true } },
+      { $lookup: {
+        from: 'types',
+        localField: 'typeId',
+        foreignField: '_id',
+        as: 'type'
+      } },
+      { $unwind: { path: '$type', preserveNullAndEmptyArrays: true } }
+    ]);
+  }
+
   async createPlaces(newPlaces: CreatePlaceDto): Promise<Places> {
     const createdPlace = await this.placesModel.create({
       ...newPlaces

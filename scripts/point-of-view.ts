@@ -3,8 +3,8 @@ export const pointsOfViews = [
     name: 'Miradouro da Graça',
     type: 'point-of-view',
     localisation: {
-      long : 38.718226826155686,
-      lat : -9.131493583062289
+      lat : 38.718226826155686,
+      long : -9.131493583062289
     }
   },
 
@@ -12,8 +12,8 @@ export const pointsOfViews = [
     name: 'Mural graffiti Fado Vadio',
     type: 'point-of-view',
     localisation: {
-      long : 38.714275616584764,
-      lat : -9.135184302298667
+      lat : 38.714275616584764,
+      long : -9.135184302298667
     }
   },
 
@@ -21,8 +21,8 @@ export const pointsOfViews = [
     name: 'Miradouro da Senhora do Monte',
     type: 'point-of-view',
     localisation: {
-      long : 38.72050369517721,
-      lat : -9.13312436598069
+      lat : 38.72050369517721,
+      long : -9.13312436598069
     }
   },
 
@@ -30,8 +30,8 @@ export const pointsOfViews = [
     name: 'Miradouro de São Pedro de Alcântara',
     type: 'point-of-view',
     localisation: {
-      long : 38.7166865500973,
-      lat : -9.144454015729567
+      lat : 38.7166865500973,
+      long : -9.144454015729567
     }
   },
 
@@ -39,8 +39,8 @@ export const pointsOfViews = [
     name: 'Amoreiras 360º Panoramic View',
     type: 'point-of-view',
     localisation: {
-      long : 38.724923292671804,
-      lat : -9.161534321032804
+      lat : 38.724923292671804,
+      long : -9.161534321032804
     }
   },
 
@@ -48,8 +48,8 @@ export const pointsOfViews = [
     name: 'Miradouro do Largo das Necessidades',
     type: 'point-of-view',
     localisation: {
-      long : 38.708716765556865,
-      lat : -9.171662341262863
+      lat : 38.708716765556865,
+      long : -9.171662341262863
     }
   },
 
@@ -57,8 +57,8 @@ export const pointsOfViews = [
     name: 'Miradouro Largo da Academia de Belas Artes',
     type: 'point-of-view',
     localisation: {
-      long : 38.71025721331945,
-      lat : -9.140334142828225
+      lat : 38.71025721331945,
+      long : -9.140334142828225
     }
   },
 
@@ -66,8 +66,8 @@ export const pointsOfViews = [
     name: 'Miradouro das Portas do Sol',
     type: 'point-of-view',
     localisation: {
-      long : 38.71407470175444,
-      lat : -9.13020612259817
+      lat : 38.71407470175444,
+      long : -9.13020612259817
     }
   },
 
@@ -75,8 +75,8 @@ export const pointsOfViews = [
     name: 'Ascenseur de Santa Justa',
     type: 'point-of-view',
     localisation: {
-      long : 38.71367287046672,
-      lat : -9.138789190589744
+      lat : 38.71367287046672,
+      long : -9.138789190589744
     }
   },
 
@@ -84,8 +84,8 @@ export const pointsOfViews = [
     name: 'Capela de Nossa Senhora da Paz',
     type: 'point-of-view',
     localisation: {
-      long : 38.6791315096901,
-      lat : -9.171084396562138
+      lat : 38.6791315096901,
+      long : -9.171084396562138
     }
   },
 
@@ -93,8 +93,8 @@ export const pointsOfViews = [
     name: 'Cais do Ginjal',
     type: 'point-of-view',
     localisation: {
-      long : 38.684625661188235,
-      lat : -9.16301631265006
+      lat : 38.684625661188235,
+      long : -9.16301631265006
     }
   },
 
@@ -102,8 +102,8 @@ export const pointsOfViews = [
     name: 'Panorâmico de Monsanto',
     type: 'point-of-view',
     localisation: {
-      long : 38.72981973811749,
-      lat : -9.18417792981965
+      lat : 38.72981973811749,
+      long : -9.18417792981965
     }
   }
 ]
