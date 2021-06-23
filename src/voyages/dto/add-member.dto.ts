@@ -8,5 +8,5 @@ export class AddMemberDto {
 
     @IsString()
     @ApiProperty({ required: true })
-    readonly userId: string;
+    readonly username: string;
 }
