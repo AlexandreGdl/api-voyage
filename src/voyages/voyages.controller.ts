@@ -51,9 +51,9 @@ export class VoyagesController {
         return this.voyagesService.addMember(addMember);
     }
 
-    @Put('/widget')
+    @Put('/widgets')
     @UseGuards(AuthGuard('jwt'))
-    async toggleWidget(@AuthUser() user: Users, body: ToggleWidgetDto): Promise<Voyages> {
+    async toggleWidget(@AuthUser() user: Users,@Body() body: ToggleWidgetDto): Promise<Voyages> {
         return this.voyagesService.toggleWidget(body);
     }
 

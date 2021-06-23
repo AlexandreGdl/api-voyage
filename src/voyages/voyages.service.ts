@@ -87,6 +87,12 @@ export class VoyagesService {
             as: 'owner'
           } },
           { $unwind: { preserveNullAndEmptyArrays: true, path: '$owner' }},
+          { $lookup: {
+              from: 'widgets',
+              localField: 'selectedWidgets',
+              foreignField: '_id',
+              as: 'activeWidgets'
+            } },
           { $project: {'owner.password' : 0 }}
         ]);
     }
