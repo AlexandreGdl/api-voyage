@@ -7,10 +7,13 @@ import { types } from './types';
 import { monuments } from './monuments';
 import { supermarkets } from "./supermarket";
 import { malls } from "./mall";
+import { widgets } from "./widgets";
 import {Places} from "../src/places/schema/places.schema";
 import {PlaceFactory} from "../src/_test/factories/place.factory";
 import {pointsOfViews} from "./point-of-view";
 import {restaurantsAndBars} from "./data";
+import {WidgetFactory} from "../src/_test/factories/widget.factory";
+import {Widgets} from "../src/widgets/schema/widgets.schema";
 
 
 /**
@@ -60,6 +63,7 @@ const generateData = async (mc: IMongoConnection): Promise<void> => {
   const configService = new ConfigService('.env.development');
   const typeFactory = TypeFactory.getInstance(mc.db);
   const placeFactory = PlaceFactory.getInstance(mc.db);
+  const widgetFactory = WidgetFactory.getInstance(mc.db);
 
   const session = mc.connection.startSession();
 
@@ -103,6 +107,52 @@ const generateData = async (mc: IMongoConnection): Promise<void> => {
           - ${typeMonument.name}
           - ${typeMall.name}
           - ${typePointOfView.name}
+      `);
+
+      const widgetAgenda = await widgetFactory.createOne( {
+        customValues: {
+          name: widgets[0].name
+        } as Widgets
+      });
+
+      const widgetWallet = await widgetFactory.createOne( {
+        customValues: {
+          name: widgets[1].name
+        } as Widgets
+      });
+
+      const widgetAccount = await widgetFactory.createOne( {
+        customValues: {
+          name: widgets[2].name
+        } as Widgets
+      });
+
+      const widgetDocument = await widgetFactory.createOne( {
+        customValues: {
+          name: widgets[3].name
+        } as Widgets
+      });
+
+      const widgetMap = await widgetFactory.createOne( {
+        customValues: {
+          name: widgets[4].name
+        } as Widgets
+      });
+
+      const widgetNote = await widgetFactory.createOne( {
+        customValues: {
+          name: widgets[5].name
+        } as Widgets
+      });
+
+      console.log(`
+        ✓ All Widgets were created : 
+          - ${widgetWallet.name}
+          - ${widgetDocument.name}
+          - ${widgetAgenda.name}
+          - ${widgetAccount.name}
+          - ${widgetMap.name}
+          - ${widgetNote.name}
       `);
 
       console.log('Creating Places ...');

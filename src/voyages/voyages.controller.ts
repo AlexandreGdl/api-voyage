@@ -12,6 +12,7 @@ import {AuthUser} from "../security/decorator/auth-user.decorator";
 import {Users} from "../users/users.schema";
 import {CreateVoyageDto} from "./dto/create-voyage.dto";
 import {AddMemberDto} from "./dto/add-member.dto";
+import {ToggleWidgetDto} from "./dto/toggle-widget.dto";
 
 @Controller('/voyages')
 @ApiTags('✈️ Voyages')
@@ -48,6 +49,12 @@ export class VoyagesController {
         
         if (voyage.ownerId.toString() !== user._id.toString()) throw new UnauthorizedException('You are not the owner');
         return this.voyagesService.addMember(addMember);
+    }
+
+    @Put('/widgets')
+    @UseGuards(AuthGuard('jwt'))
+    async toggleWidget(@AuthUser() user: Users,@Body() body: ToggleWidgetDto): Promise<Voyages> {
+        return this.voyagesService.toggleWidget(body);
     }
 
 }
