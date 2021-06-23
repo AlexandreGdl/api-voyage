@@ -28,7 +28,7 @@ import { PlacesService } from './places.services';
     @Get('')
     @UseGuards(AuthGuard('jwt'))
     async getPlaces(): Promise<Places[]> {
-        return this.placesService.getGlobalPlaces();
+      return this.placesService.getGlobalPlaces();
     }
     
     @Post('')

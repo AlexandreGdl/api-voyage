@@ -12,6 +12,7 @@ import { NotesModule } from 'src/notes/notes.module';
 import { PlacesModule } from 'src/places/places.module';
 import {VoyagesModule} from "../voyages/voyages.module";
 import {TypesModule} from "../types/types.module";
+import {WidgetsModule} from "../widgets/widgets.module";
 
 @Module({
   imports: [
@@ -39,6 +40,7 @@ import {TypesModule} from "../types/types.module";
     UsersModule,
     NotesModule,
     PlacesModule,
+    WidgetsModule,
     VoyagesModule,
     TypesModule
   ],

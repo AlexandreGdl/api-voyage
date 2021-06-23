@@ -48,4 +48,6 @@ export class VoyagesController {
         return this.voyagesService.addMember(addMember);
     }
 
+    @Put
+
 }
