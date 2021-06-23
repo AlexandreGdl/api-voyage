@@ -12,6 +12,7 @@ import {AuthUser} from "../security/decorator/auth-user.decorator";
 import {Users} from "../users/users.schema";
 import {CreateVoyageDto} from "./dto/create-voyage.dto";
 import {AddMemberDto} from "./dto/add-member.dto";
+import {ToggleWidgetDto} from "./dto/toggle-widget.dto";
 
 @Controller('/voyages')
 @ApiTags('✈️ Voyages')
@@ -48,6 +49,10 @@ export class VoyagesController {
         return this.voyagesService.addMember(addMember);
     }
 
-    @Put
+    @Put('/widget')
+    @UseGuards(AuthGuard('jwt'))
+    async toggleWidget(@AuthUser() user: Users, body: ToggleWidgetDto): Promise<Voyages> {
+        return this.voyagesService.toggleWidget(body);
+    }
 
 }
