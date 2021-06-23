@@ -24,7 +24,7 @@ import { PlacesService } from './places.services';
     ) {
       this.bcryptSalt = Number(this.env.get('bcrypt_salt'));
     }
-  
+
     @Get('')
     @UseGuards(AuthGuard('jwt'))
     async getPlaces(): Promise<Places[]> {
