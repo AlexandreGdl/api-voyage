@@ -22,6 +22,9 @@ export class Voyages extends Document {
     defaultName: string;
 
     @Prop()
+    createdDate: Date;
+
+    @Prop()
     startDate: Date;
 
     @Prop()

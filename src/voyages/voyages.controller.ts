@@ -28,8 +28,8 @@ export class VoyagesController {
 
     @Get('')
     @UseGuards(AuthGuard('jwt'))
-    async getVoyages(): Promise<boolean> {
-        return true;
+    async getVoyages(@AuthUser() user: Users): Promise<Voyages[]> {
+        return this.voyagesService.getUsersVoyage(user._id)
     }
 
     @Post('')
@@ -42,8 +42,10 @@ export class VoyagesController {
     @UseGuards(AuthGuard('jwt'))
     async addMember(@AuthUser() user: Users,@Body() addMember: AddMemberDto): Promise<Voyages> {
         const voyage = await this.voyagesService.findVoyage(addMember.voyageId);
+        console.log('toto')
         // TODO: Check if user exist
         if (!voyage) throw new NotFoundException('Voyage not found');
+        
         if (voyage.ownerId.toString() !== user._id.toString()) throw new UnauthorizedException('You are not the owner');
         return this.voyagesService.addMember(addMember);
     }
