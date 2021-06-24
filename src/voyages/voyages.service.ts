@@ -68,8 +68,8 @@ export class VoyagesService {
     }
 
     async getUsersVoyage(userId: ObjectId): Promise<Voyages[]> {
-        return this.voyagesModel.aggregate([
-          { $match: { $or: [{ ownerId: userId }, { memberIds: { $elemMatch: { userId } } }] } },
+        const toto = await this.voyagesModel.aggregate([
+          { $match: { $or: [{ ownerId: userId }, { memberIds: userId }] } },
           { $sort: { createdDate: -1 } },
           { $lookup: {
             from: 'users',
@@ -95,5 +95,6 @@ export class VoyagesService {
             } },
           { $project: {'owner.password' : 0 }}
         ]);
+        return toto;
     }
 }
