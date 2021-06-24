@@ -6,27 +6,28 @@ import {
 import { ApiTags } from '@nestjs/swagger';
 import { ConfigService } from '../config/config.service';
 import { AuthGuard } from '@nestjs/passport';
+import { Slates } from './schema/slates.schema';
 import { AuthUser } from 'src/security/decorator/auth-user.decorator';
+import { CreateSlateDto } from './dto/create-slate.dto';
 import { Users } from 'src/users/users.schema';
-import {Widgets} from "./schema/widgets.schema";
-import {WidgetService} from "./widgets.service";
+import {SlatesService} from "./slates.service";
 
-@Controller('/widgets')
-@ApiTags('⚙️ Widgets')
-export class WidgetsController {
+@Controller('/slates')
+@ApiTags('📝 Slates')
+export class SlatesController {
 
   private readonly bcryptSalt: number;
 
   constructor(
     protected readonly env: ConfigService,
-    private readonly widgetService: WidgetService,
+    private readonly slatesService: SlatesService,
   ) {
     this.bcryptSalt = Number(this.env.get('bcrypt_salt'));
   }
 
-  @Get('')
+  @Post('')
   @UseGuards(AuthGuard('jwt'))
-  async getWidgets(): Promise<Widgets[]> {
-    return this.widgetService.getWidgets();
+  async createSlates(@AuthUser() user: Users, @Body() newSlates: CreateSlateDto): Promise<Slates | Slates[]> {
+    return this.slatesService.createSlates(newSlates);
   }
 }

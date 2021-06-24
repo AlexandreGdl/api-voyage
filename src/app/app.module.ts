@@ -13,6 +13,7 @@ import { PlacesModule } from 'src/places/places.module';
 import {VoyagesModule} from "../voyages/voyages.module";
 import {TypesModule} from "../types/types.module";
 import {WidgetsModule} from "../widgets/widgets.module";
+import {SlatesModule} from "../slates/slates.module";
 
 @Module({
   imports: [
@@ -42,7 +43,8 @@ import {WidgetsModule} from "../widgets/widgets.module";
     PlacesModule,
     WidgetsModule,
     VoyagesModule,
-    TypesModule
+    TypesModule,
+    SlatesModule
   ],
   controllers: [AppController],
   providers: [

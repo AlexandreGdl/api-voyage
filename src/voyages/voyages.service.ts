@@ -8,6 +8,7 @@ import {AddMemberDto} from "./dto/add-member.dto";
 import {ToggleWidgetDto} from "./dto/toggle-widget.dto";
 import {Widgets} from "../widgets/schema/widgets.schema";
 import { Users } from 'src/users/users.schema';
+import {lookUpDonors, lookUpRecipients} from "../_helper/mongo.utils";
 
 @Injectable()
 export class VoyagesService {
@@ -73,7 +74,7 @@ export class VoyagesService {
           { $sort: { createdDate: -1 } },
           { $lookup: {
             from: 'users',
-            let: { memberId: '$memberIds' },
+            let: { memberId: '$memberIds' },
             pipeline: [
                 { $match: { $expr: { $in: ['$_id', '$$memberId'] } } },
                 { $project: {password: 0 } }
@@ -93,7 +94,17 @@ export class VoyagesService {
               foreignField: '_id',
               as: 'activeWidgets'
             } },
-          { $project: {'owner.password' : 0 }}
+          { $project: {'owner.password' : 0 }},
+          { $lookup: {
+            from: 'slates',
+            localField: '_id',
+            foreignField: 'voyageId',
+            as: 'slates'
+          }},
+          // slates lookup DONORS
+          ...lookUpDonors,
+          // slates lookup DONORS
+          ...lookUpRecipients
         ]);
     }
 }
