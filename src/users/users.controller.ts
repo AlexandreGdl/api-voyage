@@ -1,6 +1,6 @@
 import {
   Body,
-  Controller, Get, NotFoundException, Post, UseGuards,
+  Controller, Get, NotFoundException, Param, Post, UseGuards,
 } from '@nestjs/common';
 
 import { ApiTags } from '@nestjs/swagger';
@@ -26,12 +26,6 @@ export class UsersController {
     this.bcryptSalt = Number(this.env.get('bcrypt_salt'));
   }
 
-  @Get('')
-  @UseGuards(AuthGuard('jwt'))
-  async getUser(): Promise<boolean> {
-    return true;
-  }
-
   @Post('/login')
   async login(@Body() body: { email: string, password: string }): Promise<{ token: string }> {
     const user = await this.userService.login(body);
@@ -47,4 +41,9 @@ export class UsersController {
     return { token: `Bearer ${jwt}` };
   }
 
+  @Get('/:id')
+  @UseGuards(AuthGuard('jwt'))
+  async getUserById(@Param('id') id) {
+    return this.userService.getUserWithId(id);;
+  }
 }
