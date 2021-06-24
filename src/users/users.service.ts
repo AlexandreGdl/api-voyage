@@ -33,11 +33,20 @@ export class UsersService {
    * Check if user is stored in base
    * @param body
    */
-  async login(body: {email: string, password: string}): Promise<Users> {
+  async login({email, password}: {email: string, password: string}): Promise<Users> {
     const user = this.usersModel.findOne({
-
+      email,
+      password
     });
 
     return user;
+  }
+
+  /**
+   * Get user by id
+   * @param body
+   */
+   async getUserWithId(id: string): Promise<Users> {
+    return this.usersModel.findById(id, { password: 0 });
   }
 }
