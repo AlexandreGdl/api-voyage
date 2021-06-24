@@ -47,7 +47,6 @@ export class VoyagesController {
         // TODO: Check if user exist
         if (!voyage) throw new NotFoundException('Voyage not found');
         
-        if (voyage.ownerId.toString() !== user._id.toString()) throw new UnauthorizedException('You are not the owner');
         return this.voyagesService.addMember(addMember);
     }
 
