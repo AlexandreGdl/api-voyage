@@ -14,7 +14,7 @@
     "dev": "NODE_ENV=development nest start --watch",
     "dev:win": "SET NODE_ENV=development&& nest start --watch",
     "start:debug": "nest start --debug --watch",
-    "start:prod": "node dist/src/main.js",
+    "start:prod": "node dist/src/main",
     "postinstall": "npm run start:prod",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
     "test": "jest",
