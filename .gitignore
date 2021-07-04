@@ -391,6 +391,5 @@ Temporary Items
 docker-compose.yml
 .env*
 .env
-dist
 .vscode
 /.expo/

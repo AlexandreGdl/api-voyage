@@ -1,1 +1,1 @@
-web: npm run prestart:prod && npm run start:prod
+web: yarn run start:prod
