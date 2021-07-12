@@ -39,7 +39,8 @@ let SlatesService = class SlatesService {
                     donorId: new mongodb_1.ObjectId(donorId),
                     recipientId: new mongodb_1.ObjectId(slates.recipientId),
                     voyageId: new mongodb_1.ObjectId(slates.voyageId),
-                    completed: false
+                    completed: false,
+                    date: new Date
                 });
             }));
         }
@@ -49,7 +50,8 @@ let SlatesService = class SlatesService {
                 donorId: new mongodb_1.ObjectId(slates.donorId),
                 recipientId: new mongodb_1.ObjectId(slates.recipientId),
                 voyageId: new mongodb_1.ObjectId(slates.voyageId),
-                completed: false
+                completed: false,
+                date: new Date
             });
         }
     }

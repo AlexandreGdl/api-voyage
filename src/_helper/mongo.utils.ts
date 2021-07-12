@@ -1,5 +1,5 @@
 export const lookUpDonors = [
-  { '$lookup': {
+  { $lookup: {
     from: 'users',
     let: { userId: '$slates.donorId' },
     pipeline: [
@@ -15,7 +15,7 @@ export const lookUpDonors = [
 ];
 
 export const lookUpRecipients = [
-  { '$lookup': {
+  { $lookup: {
     from: 'users',
     let: { userId: '$slates.recipientId' },
     pipeline: [

@@ -35,7 +35,7 @@ export class UsersService {
    */
   async login({email, password}: {email: string, password: string}): Promise<Users> {
     const user = this.usersModel.findOne({
-      email,
+      email: email.toLowerCase(),
       password
     });
 

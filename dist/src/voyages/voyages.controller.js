@@ -40,8 +40,6 @@ let VoyagesController = class VoyagesController {
         console.log('toto');
         if (!voyage)
             throw new common_1.NotFoundException('Voyage not found');
-        if (voyage.ownerId.toString() !== user._id.toString())
-            throw new common_1.UnauthorizedException('You are not the owner');
         return this.voyagesService.addMember(addMember);
     }
     async toggleWidget(user, body) {

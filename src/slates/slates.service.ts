@@ -35,7 +35,8 @@ export class SlatesService {
             donorId: new ObjectId(donorId),
             recipientId: new ObjectId(slates.recipientId),
             voyageId: new ObjectId(slates.voyageId),
-            completed: false
+            completed: false,
+            date: new Date
           });
         })
       );
@@ -49,7 +50,8 @@ export class SlatesService {
         donorId: new ObjectId(slates.donorId),
         recipientId: new ObjectId(slates.recipientId),
         voyageId: new ObjectId(slates.voyageId),
-        completed: false
+        completed: false,
+        date: new Date
       });
     }
   }

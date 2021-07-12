@@ -22,6 +22,9 @@ export class Slates extends Document {
 
   @Prop({ required: true })
   voyageId: ObjectId;
+
+  @Prop({ required: true })
+  date: Date
 }
 
 export const SlatesSchema = SchemaFactory.createForClass(Slates);

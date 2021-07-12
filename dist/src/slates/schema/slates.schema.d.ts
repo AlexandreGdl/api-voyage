@@ -7,5 +7,6 @@ export declare class Slates extends Document {
     completed: boolean;
     title: string;
     voyageId: ObjectId;
+    date: Date;
 }
 export declare const SlatesSchema: import("mongoose").Schema<any>;

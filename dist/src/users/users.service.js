@@ -37,7 +37,7 @@ let UsersService = class UsersService {
     }
     async login({ email, password }) {
         const user = this.usersModel.findOne({
-            email,
+            email: email.toLowerCase(),
             password
         });
         return user;

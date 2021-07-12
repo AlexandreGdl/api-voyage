@@ -23,7 +23,6 @@ const voyages_module_1 = require("../voyages/voyages.module");
 const types_module_1 = require("../types/types.module");
 const widgets_module_1 = require("../widgets/widgets.module");
 const slates_module_1 = require("../slates/slates.module");
-const chat_gateaway_1 = require("../chat.gateaway");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -61,7 +60,6 @@ AppModule = __decorate([
         controllers: [app_controller_1.AppController],
         providers: [
             app_service_1.AppService,
-            chat_gateaway_1.ChatGateaway
         ],
     })
 ], AppModule);

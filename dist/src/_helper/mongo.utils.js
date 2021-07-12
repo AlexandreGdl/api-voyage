@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.lookUpRecipients = exports.lookUpDonors = void 0;
 exports.lookUpDonors = [
-    { '$lookup': {
+    { $lookup: {
             from: 'users',
             let: { userId: '$slates.donorId' },
             pipeline: [
@@ -17,7 +17,7 @@ exports.lookUpDonors = [
     { $project: { slates_donors: 0 } }
 ];
 exports.lookUpRecipients = [
-    { '$lookup': {
+    { $lookup: {
             from: 'users',
             let: { userId: '$slates.recipientId' },
             pipeline: [

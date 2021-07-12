@@ -39,6 +39,10 @@ __decorate([
     mongoose_1.Prop({ required: true }),
     __metadata("design:type", mongodb_1.ObjectId)
 ], Slates.prototype, "voyageId", void 0);
+__decorate([
+    mongoose_1.Prop({ required: true }),
+    __metadata("design:type", Date)
+], Slates.prototype, "date", void 0);
 Slates = __decorate([
     mongoose_1.Schema()
 ], Slates);

@@ -62,7 +62,7 @@ let VoyagesService = class VoyagesService {
         }
     }
     async getUsersVoyage(userId) {
-        return this.voyagesModel.aggregate([
+        const toto = await this.voyagesModel.aggregate([
             { $match: { $or: [{ ownerId: userId }, { memberIds: userId }] } },
             { $sort: { createdDate: -1 } },
             { $lookup: {
@@ -97,6 +97,7 @@ let VoyagesService = class VoyagesService {
             ...mongo_utils_1.lookUpDonors,
             ...mongo_utils_1.lookUpRecipients
         ]);
+        return toto;
     }
 };
 VoyagesService = __decorate([

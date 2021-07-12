@@ -69,7 +69,7 @@ export class VoyagesService {
     }
 
     async getUsersVoyage(userId: ObjectId): Promise<Voyages[]> {
-        return this.voyagesModel.aggregate([
+        const toto = await this.voyagesModel.aggregate([
           { $match: { $or: [{ ownerId: userId }, { memberIds: userId }] } },
           { $sort: { createdDate: -1 } },
           { $lookup: {
@@ -106,5 +106,6 @@ export class VoyagesService {
           // slates lookup DONORS
           ...lookUpRecipients
         ]);
+        return toto;
     }
 }
