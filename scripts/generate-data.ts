@@ -76,6 +76,8 @@ const generateData = async (mc: IMongoConnection): Promise<void> => {
         } as Types
       });
 
+      console.log(typeRestaurent._id);
+
       const typeSupermarket = await typeFactory.createOne( {
         customValues: {
           name: types[1].name
@@ -108,6 +110,14 @@ const generateData = async (mc: IMongoConnection): Promise<void> => {
           - ${typeMall.name}
           - ${typePointOfView.name}
       `);
+
+      console.log(`
+               - ${typeRestaurent._id}
+          - ${typeSupermarket._id}
+          - ${typeMonument._id}
+          - ${typeMall._id}
+          - ${typePointOfView._id}
+      `)
 
       const widgetAgenda = await widgetFactory.createOne( {
         customValues: {
@@ -157,42 +167,18 @@ const generateData = async (mc: IMongoConnection): Promise<void> => {
 
       console.log('Creating Places ...');
 
-      const getTypeId = (type: string) => {
-        switch(type) {
-          case typeRestaurent.name:
-            return typeRestaurent._id
-            break;
-          case typeSupermarket.name:
-            return typeSupermarket._id
-            break;
-          case typeMonument.name:
-            return typeMonument._id
-            break;
-          case typeMall.name:
-            return typeMall._id
-            break;
-          case typePointOfView.name:
-            return typePointOfView._id
-            break;
-          default:
-            return new ObjectId();
-            break;
-        }
-      }
-
       console.log(`
         Creating Monuments ...
         `);
 
       await Promise.all(
         monuments.map(async (monument) => {
-          let typeId = getTypeId(monument.type);
 
           await placeFactory.createOne( {
             customValues: {
               isGlobal: true,
               name: monument.name,
-              typeId,
+              typeId: typeMonument._id,
               position: monument.localisation
             } as Places
           });
@@ -209,13 +195,12 @@ const generateData = async (mc: IMongoConnection): Promise<void> => {
 
       await Promise.all(
         supermarkets.map(async (supermarket) => {
-          let typeId = getTypeId(supermarket.type);
 
           await placeFactory.createOne( {
             customValues: {
               isGlobal: true,
               name: supermarket.name,
-              typeId,
+              typeId: typeSupermarket._id,
               position: supermarket.localisation
             } as Places
           });
@@ -232,13 +217,12 @@ const generateData = async (mc: IMongoConnection): Promise<void> => {
 
       await Promise.all(
         malls.map(async (mall) => {
-          let typeId = getTypeId(mall.type);
 
           await placeFactory.createOne( {
             customValues: {
               isGlobal: true,
               name: mall.name,
-              typeId,
+              typeId: typeMall._id,
               position: mall.localisation
             } as Places
           });
@@ -255,13 +239,12 @@ const generateData = async (mc: IMongoConnection): Promise<void> => {
 
       await Promise.all(
         pointsOfViews.map(async (pov) => {
-          let typeId = getTypeId(pov.type);
 
           await placeFactory.createOne( {
             customValues: {
               isGlobal: true,
               name: pov.name,
-              typeId,
+              typeId: typePointOfView._id,
               position: pov.localisation
             } as Places
           });
@@ -278,13 +261,12 @@ const generateData = async (mc: IMongoConnection): Promise<void> => {
 
       await Promise.all(
         restaurantsAndBars.map(async (place) => {
-          let typeId = getTypeId(place.type);
 
           await placeFactory.createOne( {
             customValues: {
               isGlobal: true,
               name: place.name,
-              typeId,
+              typeId: typeRestaurent._id,
               position: place.localisation
             } as Places
           });

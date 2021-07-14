@@ -36,6 +36,8 @@ let UsersService = class UsersService {
         return this.getUserWithEmail(user.email);
     }
     async login({ email, password }) {
+        console.log(email);
+        console.log(password);
         const user = this.usersModel.findOne({
             email: email.toLowerCase(),
             password

@@ -466,14 +466,19 @@
         "signature": "b0213e3ce2c7acf6cfb3b255d2c6d65bc02d10da9a6bca1cbc6669db97d36313",
         "affectsGlobalScope": false
       },
+      "../node_modules/@types/mongoose/index.d.ts": {
+        "version": "fd717eac4d35df2b69400131d55520609d0708ca7c3528a4912ee47a57069e06",
+        "signature": "fd717eac4d35df2b69400131d55520609d0708ca7c3528a4912ee47a57069e06",
+        "affectsGlobalScope": false
+      },
       "../src/_test/helper/mongo.utils.ts": {
-        "version": "c7a1a3f5a097e23d0474a01913c366dd48e24c8e720e6bfd2af4c8a215c961da",
-        "signature": "6cc4548d8f1f28cb11e8499fdd52bafe3ecbe0ccd38feb31c54fc030552b7430",
+        "version": "c24f26235d03214e91fd41571ef5640555e6227c212d70c5c07b2d3bb573949f",
+        "signature": "5b5b09a2ee95cb768db38f0972486b1c4093917923a3fdfe8551107e5005f981",
         "affectsGlobalScope": false
       },
       "../src/_helper/utils.ts": {
-        "version": "1c9e5f4799dda9cf8efbf794c2e09f5f53eba19e303a10120c136cd517aa1d11",
-        "signature": "94f193db4f8c86556a083f6d4189edde3251194d968a0a377b21f2deb71762f4",
+        "version": "3c73ea2f6c49ca5b5543331ba60f0e679e0b2150639b417ce325446b993110bc",
+        "signature": "d0cf84a32bde765c9ff3b34fa6ae1a59e9b0e98d309a4e8d44c1bb73c22e8432",
         "affectsGlobalScope": false
       },
       "../src/_test/factories/base.factory.ts": {
@@ -814,11 +819,6 @@
       "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": {
         "version": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4",
         "signature": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/mongoose/index.d.ts": {
-        "version": "fd717eac4d35df2b69400131d55520609d0708ca7c3528a4912ee47a57069e06",
-        "signature": "fd717eac4d35df2b69400131d55520609d0708ca7c3528a4912ee47a57069e06",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/mongoose/dist/decorators/prop.decorator.d.ts": {
@@ -1657,7 +1657,7 @@
         "affectsGlobalScope": false
       },
       "../scripts/generate-data.ts": {
-        "version": "3d7779510223e46be47980dbcb1bdc48d06cdf657f62d2789c1c83d6a3684101",
+        "version": "cba307e3673d85434d4bcf4446cda1ceb58baa2ac6ae3d17717f50381b6dda14",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
@@ -2687,7 +2687,7 @@
         "affectsGlobalScope": false
       },
       "../src/users/users.service.ts": {
-        "version": "f312f88d2ef46dffbd25db670eb603a7489f5de17246176afac9b4a2e3d911fd",
+        "version": "48917309d289c3423a65cee20abd67c6c3931b42e9687973802c1d40758fccff",
         "signature": "00a9c864d1280f34e9a42f23a881ba64a669f215bf188ea98f53cdb47c72fa01",
         "affectsGlobalScope": false
       },
@@ -2872,8 +2872,8 @@
         "affectsGlobalScope": false
       },
       "../src/notes/notes.controller.ts": {
-        "version": "501dd67dc5ec27d5a39d701d272a85b6993f3dea76bbd8e7ad179875161fe875",
-        "signature": "08cf5b0947559844f17473c0073bf9dcaf68126b2fb2635db5458d38581165c1",
+        "version": "2b7444eda82a9c2b52c04e9fc9939378fba568344cb6ee02510df714c5ece831",
+        "signature": "61264fa66a307b463463a911b1b60ba54183a34266d4a176f4712b1e3870c064",
         "affectsGlobalScope": false
       },
       "../src/notes/notes.module.ts": {
@@ -2892,8 +2892,8 @@
         "affectsGlobalScope": false
       },
       "../src/places/places.controller.ts": {
-        "version": "972fdb5ad323cedcdcfa15933d73fb0d592fd8d385f58aee5d91bb2be8ef94cf",
-        "signature": "1cca1457aeaabf505bf3ca34937e278966679f9c84d1907e5321b91db711c1ff",
+        "version": "f1fdbd0be66e031fff736909f349241d0ddc54fb4660a7991b0bce7076394123",
+        "signature": "507dbd8cf1868b6fbc2a90cec3c57f43cd0293c11d9e439571d508b2db2d4551",
         "affectsGlobalScope": false
       },
       "../src/places/places.module.ts": {
@@ -2942,7 +2942,7 @@
         "affectsGlobalScope": false
       },
       "../src/voyages/voyages.module.ts": {
-        "version": "6bbc2f81d41f476283c42fbfb74578c9e2426afa18a12b6c671c703dad5d6dc5",
+        "version": "1b5d9abbdc202a350eda1542623dd485b6a209475fda86854ed946afd18dd475",
         "signature": "3fa40931c0a9f082920736fa3c10deab9f5fc54dc950fb34ed9fd498b279988c",
         "affectsGlobalScope": false
       },
@@ -2972,12 +2972,12 @@
         "affectsGlobalScope": false
       },
       "../src/widgets/widgets.controller.ts": {
-        "version": "41783269f437879c4cd7d039b7829e2c60a0205b560790c4258025bb06c4e9ab",
+        "version": "8da2960659c34ae1fdc4ad142b33b6098b87e43d00c47dd6ae6178f105d35f29",
         "signature": "cb77b12733042dd78e9d5997fc514ecbef669141c1ec07bd11c775ca9b247e0b",
         "affectsGlobalScope": false
       },
       "../src/widgets/widgets.module.ts": {
-        "version": "6cfaf6ae23cf87759cc9dc11ad05eb7ba47c5ca73a634b2e20ee399a2fdc19cb",
+        "version": "da1d59910c84d86c56dd83b009b117d4ea9058f417f7cf08e0e9ac72490daef7",
         "signature": "84202a06c405590e3e32ceb71993d72fa057a859cc8fd8e8a15073211ddfb5f2",
         "affectsGlobalScope": false
       },
@@ -2997,8 +2997,8 @@
         "affectsGlobalScope": false
       },
       "../src/slates/slates.controller.ts": {
-        "version": "21830e4927c754b7d34be9992e57ca7b2958a228b2727f66b0229fda9e9174ac",
-        "signature": "71c8545ceb3063a1b4ed58ca361c28a5b53af3966f8203d86a2d79ca62aa6f8e",
+        "version": "c1ca6550ce7f576a1861651369823e9105e111c4896efc1e42bb56d682eaea2e",
+        "signature": "44eac30b3521ea3f87370b9f6cc2d46babc2fdb1f14b3006daf7e19566c9b284",
         "affectsGlobalScope": false
       },
       "../src/slates/slates.module.ts": {
@@ -3007,7 +3007,7 @@
         "affectsGlobalScope": false
       },
       "../src/app/app.module.ts": {
-        "version": "52e996411aabf70b578a7342748e4f8c54a12e96af7c7cb5f44d405eae6498b2",
+        "version": "fa6daaf509a90c25ff99e6b7461eee22e0db1b2cc1c80fe614f7859d9694792b",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
@@ -3016,9 +3016,124 @@
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
         "affectsGlobalScope": false
       },
+      "../node_modules/@types/jsonapi-serializer/index.d.ts": {
+        "version": "21d0ab26ec775de8493597ea6dc3748028c4aeac19150d217ce56b0a7bc4d869",
+        "signature": "21d0ab26ec775de8493597ea6dc3748028c4aeac19150d217ce56b0a7bc4d869",
+        "affectsGlobalScope": false
+      },
+      "../src/_test/_helper/deserialize.utils.ts": {
+        "version": "89c89ff40f424e65b42e14ec497d80703c67ff483529e8164c7768c3c32ee608",
+        "signature": "5881d919e26f240074d6d24d508e852023c089442583f7cf523a62ec07c03a4c",
+        "affectsGlobalScope": false
+      },
+      "../src/_test/_helper/mongo.utils.ts": {
+        "version": "996c0ff2985d8e42ae0f1bc876e497d4e8bbb2b47fd3c87f4148f2b49d4928b4",
+        "signature": "5b5b09a2ee95cb768db38f0972486b1c4093917923a3fdfe8551107e5005f981",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts": {
+        "version": "ca248f650c19abc031e2aaafa41fceb524378b1a2249905b44d1c8e4148fcb52",
+        "signature": "ca248f650c19abc031e2aaafa41fceb524378b1a2249905b44d1c8e4148fcb52",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/testing-module.d.ts": {
+        "version": "1cb85d69d6e68b4fcb46c6e121781e417f5784c1c0bd919a9cc4a00c6243c582",
+        "signature": "1cb85d69d6e68b4fcb46c6e121781e417f5784c1c0bd919a9cc4a00c6243c582",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/testing-module.builder.d.ts": {
+        "version": "ba8cf606aee66bd27748f6b51776ebc6117f8abdaee40052e890e697baff8e0b",
+        "signature": "ba8cf606aee66bd27748f6b51776ebc6117f8abdaee40052e890e697baff8e0b",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts": {
+        "version": "9388b0ffb5ab94e23e0165a96985091a133e3632e5f92fd72b14df7d73b3804d",
+        "signature": "9388b0ffb5ab94e23e0165a96985091a133e3632e5f92fd72b14df7d73b3804d",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/interfaces/index.d.ts": {
+        "version": "a397d00d0454ddb1cae255c19bde344f78b8b93512cff09b98b7e148d889b6e6",
+        "signature": "a397d00d0454ddb1cae255c19bde344f78b8b93512cff09b98b7e148d889b6e6",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/test.d.ts": {
+        "version": "927c6cf84c59b3ca7fdb6d3cbc3aa986193337b6a9758994575106f6073ee737",
+        "signature": "927c6cf84c59b3ca7fdb6d3cbc3aa986193337b6a9758994575106f6073ee737",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@nestjs/testing/index.d.ts": {
+        "version": "0a33b8bff876368beef794f5f08e8221103efa394f9e0e27e19f557a8cdaa0a0",
+        "signature": "0a33b8bff876368beef794f5f08e8221103efa394f9e0e27e19f557a8cdaa0a0",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/sonic-boom/index.d.ts": {
+        "version": "6132950b1b7373161398abc9420d3b1cd626b7e2a3e4f510e245d527cf040dde",
+        "signature": "6132950b1b7373161398abc9420d3b1cd626b7e2a3e4f510e245d527cf040dde",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/pino-std-serializers/index.d.ts": {
+        "version": "799475c7b67b02267bd548418cd9a29a05c1f6484ae0a44dff74510374cbb585",
+        "signature": "799475c7b67b02267bd548418cd9a29a05c1f6484ae0a44dff74510374cbb585",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/pino/index.d.ts": {
+        "version": "8118a14bda1ce9f3d3f0bed3ce1076c5b2a4a9e79fd1cd6eff44d013737364ce",
+        "signature": "8118a14bda1ce9f3d3f0bed3ce1076c5b2a4a9e79fd1cd6eff44d013737364ce",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/@types/pino-http/index.d.ts": {
+        "version": "2e682b2d7787428d0671e85a6abeafc2af6122aa546176187f85ef49d5728e09",
+        "signature": "2e682b2d7787428d0671e85a6abeafc2af6122aa546176187f85ef49d5728e09",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/nestjs-pino/dist/params.d.ts": {
+        "version": "01231ec42a6bd22a73426b286c96ab640429ed9eaff28316b09fc0a98f1a4ccc",
+        "signature": "01231ec42a6bd22a73426b286c96ab640429ed9eaff28316b09fc0a98f1a4ccc",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/nestjs-pino/dist/loggermodule.d.ts": {
+        "version": "44142f2565f90dec68cfe9ab0226b9310b93cc7187a10028dc139b1e3766a0c8",
+        "signature": "44142f2565f90dec68cfe9ab0226b9310b93cc7187a10028dc139b1e3766a0c8",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/nestjs-pino/dist/pinologger.d.ts": {
+        "version": "0ec2076bfb0f441bc74916e6176f3402411bff2743c594e42ce080637845b630",
+        "signature": "0ec2076bfb0f441bc74916e6176f3402411bff2743c594e42ce080637845b630",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/nestjs-pino/dist/logger.d.ts": {
+        "version": "ed0a3fb5d74c9a1f1f7ae398998487e77a255e12383382220dc4571525ef2cf8",
+        "signature": "ed0a3fb5d74c9a1f1f7ae398998487e77a255e12383382220dc4571525ef2cf8",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/nestjs-pino/dist/injectpinologger.d.ts": {
+        "version": "97bfb180cb9ec3bd6d7daa7e8070dd0a2bcb508067632c39f93a97a573c55096",
+        "signature": "97bfb180cb9ec3bd6d7daa7e8070dd0a2bcb508067632c39f93a97a573c55096",
+        "affectsGlobalScope": false
+      },
+      "../node_modules/nestjs-pino/dist/index.d.ts": {
+        "version": "964b701d1f79411ee7c8e9b86f5c9814cd08e14217d4ebf3113cd23afacc148b",
+        "signature": "964b701d1f79411ee7c8e9b86f5c9814cd08e14217d4ebf3113cd23afacc148b",
+        "affectsGlobalScope": false
+      },
+      "../src/_test/_helper/nest-testing.utils.ts": {
+        "version": "88f154ec87e4989d128cfa338c93d7735b88abc98e22b00b975e633c83660497",
+        "signature": "2b34e312bf4358c641bf9f098903fa6c126b778da442df385d4b671e40270d58",
+        "affectsGlobalScope": false
+      },
+      "../src/_test/config/dotenv.module.ts": {
+        "version": "250e45c3d4829cd24a247f63efce43262d5b4a710c0bfb0561c0ac42960cfe6a",
+        "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881",
+        "affectsGlobalScope": false
+      },
       "../src/_test/factories/user.factory.ts": {
-        "version": "be6c16517f79babdc20c780d891ce0b0befa0d4ecf95bf81e93cf70de679e97c",
+        "version": "b4c039408c348eb0d04e283bd5ddc753bee0fd62c2193919141e3e22e9e1f9c0",
         "signature": "9dfb5c842205bfc7eb8668a6511ab556ec1cea9f2f4de134ddf8c82b421d4142",
+        "affectsGlobalScope": false
+      },
+      "../src/_test/helper/nest-testing.utils.ts": {
+        "version": "88f154ec87e4989d128cfa338c93d7735b88abc98e22b00b975e633c83660497",
+        "signature": "2b34e312bf4358c641bf9f098903fa6c126b778da442df385d4b671e40270d58",
         "affectsGlobalScope": false
       },
       "../src/security/decorator/levels.decorator.ts": {
@@ -3221,11 +3336,6 @@
         "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
         "affectsGlobalScope": false
       },
-      "../node_modules/@types/jsonapi-serializer/index.d.ts": {
-        "version": "21d0ab26ec775de8493597ea6dc3748028c4aeac19150d217ce56b0a7bc4d869",
-        "signature": "21d0ab26ec775de8493597ea6dc3748028c4aeac19150d217ce56b0a7bc4d869",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@types/lockfile/index.d.ts": {
         "version": "cee125153eece5bd0bca08d97fb4fbb9ef6ff3e72d89f7a3bc1a52b828128cef",
         "signature": "cee125153eece5bd0bca08d97fb4fbb9ef6ff3e72d89f7a3bc1a52b828128cef",
@@ -3254,26 +3364,6 @@
       "../node_modules/@types/passport-local/index.d.ts": {
         "version": "e50f9ae34bb92232533e3a32848970dd04f874a8f64d3ae48980e062b6489f26",
         "signature": "e50f9ae34bb92232533e3a32848970dd04f874a8f64d3ae48980e062b6489f26",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/sonic-boom/index.d.ts": {
-        "version": "6132950b1b7373161398abc9420d3b1cd626b7e2a3e4f510e245d527cf040dde",
-        "signature": "6132950b1b7373161398abc9420d3b1cd626b7e2a3e4f510e245d527cf040dde",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/pino-std-serializers/index.d.ts": {
-        "version": "799475c7b67b02267bd548418cd9a29a05c1f6484ae0a44dff74510374cbb585",
-        "signature": "799475c7b67b02267bd548418cd9a29a05c1f6484ae0a44dff74510374cbb585",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/pino/index.d.ts": {
-        "version": "8118a14bda1ce9f3d3f0bed3ce1076c5b2a4a9e79fd1cd6eff44d013737364ce",
-        "signature": "8118a14bda1ce9f3d3f0bed3ce1076c5b2a4a9e79fd1cd6eff44d013737364ce",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/pino-http/index.d.ts": {
-        "version": "2e682b2d7787428d0671e85a6abeafc2af6122aa546176187f85ef49d5728e09",
-        "signature": "2e682b2d7787428d0671e85a6abeafc2af6122aa546176187f85ef49d5728e09",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/prettier/index.d.ts": {
@@ -4469,6 +4559,38 @@
       "../node_modules/@nestjs/swagger/index.d.ts": [
         "../node_modules/@nestjs/swagger/dist/index.d.ts"
       ],
+      "../node_modules/@nestjs/testing/index.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/index.d.ts",
+        "../node_modules/@nestjs/testing/test.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts",
+        "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/test.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/modules/module-metadata.interface.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/testing-module.builder.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@nestjs/core/metadata-scanner.d.ts",
+        "../node_modules/@nestjs/testing/interfaces/index.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/testing-module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
+        "../node_modules/@nestjs/core/application-config.d.ts",
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../node_modules/@nestjs/core/injector/container.d.ts",
+        "../node_modules/@nestjs/core/injector/module.d.ts"
+      ],
       "../node_modules/@types/babel__core/index.d.ts": [
         "../node_modules/@babel/parser/typings/babel-parser.d.ts",
         "../node_modules/@babel/types/lib/index.d.ts",
@@ -5573,6 +5695,35 @@
         "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
         "../node_modules/jest-diff/build/types.d.ts"
       ],
+      "../node_modules/nestjs-pino/dist/index.d.ts": [
+        "../node_modules/nestjs-pino/dist/injectpinologger.d.ts",
+        "../node_modules/nestjs-pino/dist/logger.d.ts",
+        "../node_modules/nestjs-pino/dist/loggermodule.d.ts",
+        "../node_modules/nestjs-pino/dist/params.d.ts",
+        "../node_modules/nestjs-pino/dist/pinologger.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/injectpinologger.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/nestjs-pino/dist/pinologger.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/logger.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/nestjs-pino/dist/params.d.ts",
+        "../node_modules/nestjs-pino/dist/pinologger.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/loggermodule.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/nestjs-pino/dist/params.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/params.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/pino-http/index.d.ts",
+        "../node_modules/@types/pino/index.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/pinologger.d.ts": [
+        "../node_modules/@types/pino/index.d.ts",
+        "../node_modules/nestjs-pino/dist/params.d.ts"
+      ],
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
@@ -5891,6 +6042,25 @@
         "../src/types/types.schema.ts",
         "../src/widgets/schema/widgets.schema.ts"
       ],
+      "../src/_helper/utils.ts": [
+        "../node_modules/@types/mongodb/index.d.ts"
+      ],
+      "../src/_test/_helper/deserialize.utils.ts": [
+        "../node_modules/@types/jsonapi-serializer/index.d.ts"
+      ],
+      "../src/_test/_helper/mongo.utils.ts": [
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/_test/_helper/nest-testing.utils.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/testing/index.d.ts",
+        "../node_modules/nestjs-pino/dist/index.d.ts",
+        "../src/app/app.module.ts"
+      ],
+      "../src/_test/config/dotenv.module.ts": [
+        "../node_modules/dotenv/types/index.d.ts"
+      ],
       "../src/_test/factories/base.factory.ts": [
         "../node_modules/@types/mongodb/index.d.ts",
         "../src/_helper/utils.ts"
@@ -5922,7 +6092,14 @@
         "../src/widgets/schema/widgets.schema.ts"
       ],
       "../src/_test/helper/mongo.utils.ts": [
-        "../node_modules/@types/mongodb/index.d.ts"
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/_test/helper/nest-testing.utils.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/testing/index.d.ts",
+        "../node_modules/nestjs-pino/dist/index.d.ts",
+        "../src/app/app.module.ts"
       ],
       "../src/app/app.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
@@ -6258,8 +6435,6 @@
         "../node_modules/@nestjs/passport/index.d.ts",
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../src/config/config.service.ts",
-        "../src/security/decorator/auth-user.decorator.ts",
-        "../src/users/users.schema.ts",
         "../src/widgets/schema/widgets.schema.ts",
         "../src/widgets/widgets.service.ts"
       ],
@@ -7126,6 +7301,38 @@
       "../node_modules/@nestjs/swagger/index.d.ts": [
         "../node_modules/@nestjs/swagger/dist/index.d.ts"
       ],
+      "../node_modules/@nestjs/testing/index.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/index.d.ts",
+        "../node_modules/@nestjs/testing/test.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts",
+        "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts": [
+        "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/test.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/modules/module-metadata.interface.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.builder.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/testing-module.builder.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@nestjs/core/metadata-scanner.d.ts",
+        "../node_modules/@nestjs/testing/interfaces/index.d.ts",
+        "../node_modules/@nestjs/testing/testing-module.d.ts"
+      ],
+      "../node_modules/@nestjs/testing/testing-module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/microservices/nest-microservice-options.interface.d.ts",
+        "../node_modules/@nestjs/core/application-config.d.ts",
+        "../node_modules/@nestjs/core/index.d.ts",
+        "../node_modules/@nestjs/core/injector/container.d.ts",
+        "../node_modules/@nestjs/core/injector/module.d.ts"
+      ],
       "../node_modules/@types/babel__core/index.d.ts": [
         "../node_modules/@babel/parser/typings/babel-parser.d.ts",
         "../node_modules/@babel/types/lib/index.d.ts",
@@ -8230,6 +8437,35 @@
         "../node_modules/jest-diff/build/cleanupsemantic.d.ts",
         "../node_modules/jest-diff/build/types.d.ts"
       ],
+      "../node_modules/nestjs-pino/dist/index.d.ts": [
+        "../node_modules/nestjs-pino/dist/injectpinologger.d.ts",
+        "../node_modules/nestjs-pino/dist/logger.d.ts",
+        "../node_modules/nestjs-pino/dist/loggermodule.d.ts",
+        "../node_modules/nestjs-pino/dist/params.d.ts",
+        "../node_modules/nestjs-pino/dist/pinologger.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/injectpinologger.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/nestjs-pino/dist/pinologger.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/logger.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/nestjs-pino/dist/params.d.ts",
+        "../node_modules/nestjs-pino/dist/pinologger.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/loggermodule.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/nestjs-pino/dist/params.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/params.d.ts": [
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/pino-http/index.d.ts",
+        "../node_modules/@types/pino/index.d.ts"
+      ],
+      "../node_modules/nestjs-pino/dist/pinologger.d.ts": [
+        "../node_modules/@types/pino/index.d.ts",
+        "../node_modules/nestjs-pino/dist/params.d.ts"
+      ],
       "../node_modules/pretty-format/build/index.d.ts": [
         "../node_modules/pretty-format/build/types.d.ts"
       ],
@@ -8530,6 +8766,14 @@
       "../node_modules/rxjs/internal/util/pipe.d.ts": [
         "../node_modules/rxjs/internal/types.d.ts"
       ],
+      "../src/_test/_helper/mongo.utils.ts": [
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/_test/_helper/nest-testing.utils.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/testing/index.d.ts"
+      ],
       "../src/_test/factories/base.factory.ts": [
         "../node_modules/@types/mongodb/index.d.ts"
       ],
@@ -8554,7 +8798,12 @@
         "../src/widgets/schema/widgets.schema.ts"
       ],
       "../src/_test/helper/mongo.utils.ts": [
-        "../node_modules/@types/mongodb/index.d.ts"
+        "../node_modules/@types/mongodb/index.d.ts",
+        "../node_modules/@types/mongoose/index.d.ts"
+      ],
+      "../src/_test/helper/nest-testing.utils.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/testing/index.d.ts"
       ],
       "../src/app/app.controller.ts": [
         "../src/app/app.service.ts"
@@ -8962,6 +9211,13 @@
       "../node_modules/@nestjs/swagger/dist/utils/get-schema-path.util.d.ts",
       "../node_modules/@nestjs/swagger/dist/utils/index.d.ts",
       "../node_modules/@nestjs/swagger/index.d.ts",
+      "../node_modules/@nestjs/testing/index.d.ts",
+      "../node_modules/@nestjs/testing/interfaces/index.d.ts",
+      "../node_modules/@nestjs/testing/interfaces/override-by-factory-options.interface.d.ts",
+      "../node_modules/@nestjs/testing/interfaces/override-by.interface.d.ts",
+      "../node_modules/@nestjs/testing/test.d.ts",
+      "../node_modules/@nestjs/testing/testing-module.builder.d.ts",
+      "../node_modules/@nestjs/testing/testing-module.d.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@types/babel__core/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
@@ -9259,6 +9515,12 @@
       "../node_modules/jest-diff/build/index.d.ts",
       "../node_modules/jest-diff/build/printdiffs.d.ts",
       "../node_modules/jest-diff/build/types.d.ts",
+      "../node_modules/nestjs-pino/dist/index.d.ts",
+      "../node_modules/nestjs-pino/dist/injectpinologger.d.ts",
+      "../node_modules/nestjs-pino/dist/logger.d.ts",
+      "../node_modules/nestjs-pino/dist/loggermodule.d.ts",
+      "../node_modules/nestjs-pino/dist/params.d.ts",
+      "../node_modules/nestjs-pino/dist/pinologger.d.ts",
       "../node_modules/pretty-format/build/index.d.ts",
       "../node_modules/pretty-format/build/types.d.ts",
       "../node_modules/reflect-metadata/index.d.ts",
@@ -9378,12 +9640,17 @@
       "../scripts/widgets.ts",
       "../src/_helper/mongo.utils.ts",
       "../src/_helper/utils.ts",
+      "../src/_test/_helper/deserialize.utils.ts",
+      "../src/_test/_helper/mongo.utils.ts",
+      "../src/_test/_helper/nest-testing.utils.ts",
+      "../src/_test/config/dotenv.module.ts",
       "../src/_test/factories/base.factory.ts",
       "../src/_test/factories/place.factory.ts",
       "../src/_test/factories/type.factory.ts",
       "../src/_test/factories/user.factory.ts",
       "../src/_test/factories/widget.factory.ts",
       "../src/_test/helper/mongo.utils.ts",
+      "../src/_test/helper/nest-testing.utils.ts",
       "../src/app/app.controller.ts",
       "../src/app/app.module.ts",
       "../src/app/app.service.ts",

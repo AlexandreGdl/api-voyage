@@ -1,7 +1,7 @@
 import { ConfigService } from '../config/config.service';
 import { Slates } from './schema/slates.schema';
 import { CreateSlateDto } from './dto/create-slate.dto';
-import { Users } from 'src/users/users.schema';
+import { Users } from '../users/users.schema';
 import { SlatesService } from "./slates.service";
 export declare class SlatesController {
     protected readonly env: ConfigService;

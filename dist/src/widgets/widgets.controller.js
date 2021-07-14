@@ -14,8 +14,6 @@ const common_1 = require("@nestjs/common");
 const swagger_1 = require("@nestjs/swagger");
 const config_service_1 = require("../config/config.service");
 const passport_1 = require("@nestjs/passport");
-const auth_user_decorator_1 = require("../security/decorator/auth-user.decorator");
-const users_schema_1 = require("../users/users.schema");
 const widgets_service_1 = require("./widgets.service");
 let WidgetsController = class WidgetsController {
     constructor(env, widgetService) {

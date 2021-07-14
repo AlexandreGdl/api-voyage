@@ -14,7 +14,12 @@ class UserFactory extends base_factory_1.BaseFactory {
         return UserFactory.instance;
     }
     async generateOne(options) {
-        return utils_1.mergeObjects({}, options?.customValues);
+        return utils_1.mergeObjects({
+            password: 'Test123@',
+            phoneNumber: '06999999',
+            email: 'test@gmail.com',
+            username: 'test'
+        }, options?.customValues);
     }
 }
 exports.UserFactory = UserFactory;
