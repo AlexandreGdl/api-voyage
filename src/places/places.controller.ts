@@ -7,9 +7,9 @@ import {
   import { ConfigService } from '../config/config.service';
   import { AuthGuard } from '@nestjs/passport';
 import { Places } from './schema/places.schema';
-import { AuthUser } from 'src/security/decorator/auth-user.decorator';
+import { AuthUser } from '../security/decorator/auth-user.decorator';
 import { CreatePlaceDto } from './dto/create-place.dto';
-import { Users } from 'src/users/users.schema';
+import { Users } from '../users/users.schema';
 import { PlacesService } from './places.services';
 
   @Controller('/places')

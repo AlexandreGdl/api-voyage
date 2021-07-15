@@ -35,7 +35,6 @@ AppModule = __decorate([
                     uri: env.qualifiedMongoUri(),
                     useNewUrlParser: true,
                     useUnifiedTopology: true,
-                    loggerLevel: env.get('MONGO_DEBUG_LEVEL') || 'error',
                 })
             }),
             passport_1.PassportModule.register({ defaultStrategy: 'jwt' }),

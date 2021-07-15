@@ -36,7 +36,10 @@ export class UserFactory extends BaseFactory<Users> {
 
     return mergeObjects<Users>(
       {
-
+        password: 'Test123@',
+        phoneNumber: '06999999',
+        email: 'test@gmail.com',
+        username: 'test'
       } as Users,
       options?.customValues
     );

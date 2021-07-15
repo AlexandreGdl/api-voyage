@@ -34,6 +34,8 @@ export class UsersService {
    * @param body
    */
   async login({email, password}: {email: string, password: string}): Promise<Users> {
+    console.log(email)
+    console.log(password)
     const user = this.usersModel.findOne({
       email: email.toLowerCase(),
       password

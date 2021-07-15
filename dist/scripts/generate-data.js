@@ -47,6 +47,7 @@ const generateData = async (mc) => {
                     name: types_1.types[0].name
                 }
             });
+            console.log(typeRestaurent._id);
             const typeSupermarket = await typeFactory.createOne({
                 customValues: {
                     name: types_1.types[1].name
@@ -74,6 +75,13 @@ const generateData = async (mc) => {
           - ${typeMonument.name}
           - ${typeMall.name}
           - ${typePointOfView.name}
+      `);
+            console.log(`
+               - ${typeRestaurent._id}
+          - ${typeSupermarket._id}
+          - ${typeMonument._id}
+          - ${typeMall._id}
+          - ${typePointOfView._id}
       `);
             const widgetAgenda = await widgetFactory.createOne({
                 customValues: {
@@ -115,38 +123,15 @@ const generateData = async (mc) => {
           - ${widgetNote.name}
       `);
             console.log('Creating Places ...');
-            const getTypeId = (type) => {
-                switch (type) {
-                    case typeRestaurent.name:
-                        return typeRestaurent._id;
-                        break;
-                    case typeSupermarket.name:
-                        return typeSupermarket._id;
-                        break;
-                    case typeMonument.name:
-                        return typeMonument._id;
-                        break;
-                    case typeMall.name:
-                        return typeMall._id;
-                        break;
-                    case typePointOfView.name:
-                        return typePointOfView._id;
-                        break;
-                    default:
-                        return new mongodb_1.ObjectId();
-                        break;
-                }
-            };
             console.log(`
         Creating Monuments ...
         `);
             await Promise.all(monuments_1.monuments.map(async (monument) => {
-                let typeId = getTypeId(monument.type);
                 await placeFactory.createOne({
                     customValues: {
                         isGlobal: true,
                         name: monument.name,
-                        typeId,
+                        typeId: typeMonument._id,
                         position: monument.localisation
                     }
                 });
@@ -158,12 +143,11 @@ const generateData = async (mc) => {
         Creating SuperMarkets ...
         `);
             await Promise.all(supermarket_1.supermarkets.map(async (supermarket) => {
-                let typeId = getTypeId(supermarket.type);
                 await placeFactory.createOne({
                     customValues: {
                         isGlobal: true,
                         name: supermarket.name,
-                        typeId,
+                        typeId: typeSupermarket._id,
                         position: supermarket.localisation
                     }
                 });
@@ -175,12 +159,11 @@ const generateData = async (mc) => {
         Creating Malls ...
         `);
             await Promise.all(mall_1.malls.map(async (mall) => {
-                let typeId = getTypeId(mall.type);
                 await placeFactory.createOne({
                     customValues: {
                         isGlobal: true,
                         name: mall.name,
-                        typeId,
+                        typeId: typeMall._id,
                         position: mall.localisation
                     }
                 });
@@ -192,12 +175,11 @@ const generateData = async (mc) => {
         Creating Points of view ...
         `);
             await Promise.all(point_of_view_1.pointsOfViews.map(async (pov) => {
-                let typeId = getTypeId(pov.type);
                 await placeFactory.createOne({
                     customValues: {
                         isGlobal: true,
                         name: pov.name,
-                        typeId,
+                        typeId: typePointOfView._id,
                         position: pov.localisation
                     }
                 });
@@ -209,12 +191,11 @@ const generateData = async (mc) => {
         Creating Restaurants & Bars ...
         `);
             await Promise.all(data_1.restaurantsAndBars.map(async (place) => {
-                let typeId = getTypeId(place.type);
                 await placeFactory.createOne({
                     customValues: {
                         isGlobal: true,
                         name: place.name,
-                        typeId,
+                        typeId: typeRestaurent._id,
                         position: place.localisation
                     }
                 });

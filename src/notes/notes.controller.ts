@@ -7,9 +7,9 @@ import { ApiTags } from '@nestjs/swagger';
 import { ConfigService } from '../config/config.service';
 import { AuthGuard } from '@nestjs/passport';
 import { Notes } from './schema/notes.schema';
-import { AuthUser } from 'src/security/decorator/auth-user.decorator';
+import { AuthUser } from '../security/decorator/auth-user.decorator';
 import { CreateNotesDto } from './dto/create-note.dto';
-import { Users } from 'src/users/users.schema';
+import { Users } from '../users/users.schema';
 import { NotesService } from './notes.service';
   
   @Controller('/notes')

@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import {MongooseModule} from "@nestjs/mongoose";
-import { UsersModule } from 'src/users/users.module';
+import { UsersModule } from '../users/users.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import {ConfigModule} from "../config/config.module";
@@ -8,8 +8,8 @@ import {ConfigService} from "../config/config.service";
 import {PassportModule} from "@nestjs/passport";
 import {UsersSchema} from "../users/users.schema";
 import {JwtModule} from "@nestjs/jwt";
-import { NotesModule } from 'src/notes/notes.module';
-import { PlacesModule } from 'src/places/places.module';
+import { NotesModule } from '../notes/notes.module';
+import { PlacesModule } from '../places/places.module';
 import {VoyagesModule} from "../voyages/voyages.module";
 import {TypesModule} from "../types/types.module";
 import {WidgetsModule} from "../widgets/widgets.module";
@@ -24,7 +24,6 @@ import {SlatesModule} from "../slates/slates.module";
         uri: env.qualifiedMongoUri(),
         useNewUrlParser: true,
         useUnifiedTopology: true,
-        loggerLevel: env.get('MONGO_DEBUG_LEVEL') || 'error',
       })
     }),
     PassportModule.register({ defaultStrategy: 'jwt' }),

@@ -7,9 +7,9 @@ import { ApiTags } from '@nestjs/swagger';
 import { ConfigService } from '../config/config.service';
 import { AuthGuard } from '@nestjs/passport';
 import { Slates } from './schema/slates.schema';
-import { AuthUser } from 'src/security/decorator/auth-user.decorator';
+import { AuthUser } from '../security/decorator/auth-user.decorator';
 import { CreateSlateDto } from './dto/create-slate.dto';
-import { Users } from 'src/users/users.schema';
+import { Users } from '../users/users.schema';
 import {SlatesService} from "./slates.service";
 
 @Controller('/slates')
