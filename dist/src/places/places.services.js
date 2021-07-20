@@ -29,7 +29,8 @@ let PlacesService = class PlacesService {
                     foreignField: '_id',
                     as: 'type'
                 } },
-            { $unwind: { path: '$type', preserveNullAndEmptyArrays: true } }
+            { $unwind: { path: '$type', preserveNullAndEmptyArrays: true } },
+            { $sort: { name: 1 } }
         ]);
     }
     async createPlaces(newPlaces) {

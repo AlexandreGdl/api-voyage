@@ -2887,7 +2887,7 @@
         "affectsGlobalScope": false
       },
       "../src/places/places.services.ts": {
-        "version": "df8a4381e2d46c56579d05357cc1a828645afb48cb3913d7ee90201aa0cecf65",
+        "version": "1dd6a02d3051424fcfcf59d6b42487c1cefda0d7b610607cba1beefe28340664",
         "signature": "f898a569446c2f22807684a95214d1998c50cd4010d2ef98bc7ab150377de828",
         "affectsGlobalScope": false
       },
@@ -3191,24 +3191,9 @@
         "signature": "a66e700ed470a0cb52d14f3376c1605c70fec8e9659e45f7e22ad07fcd06ae04",
         "affectsGlobalScope": false
       },
-      "../node_modules/@types/component-emitter/index.d.ts": {
-        "version": "a3a88c1869ba1022dfaefac47ff7a984ec62510e9b4d60988f91d5e523266c34",
-        "signature": "a3a88c1869ba1022dfaefac47ff7a984ec62510e9b4d60988f91d5e523266c34",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/cookie/index.d.ts": {
-        "version": "405ad6db8aa3d5618c3be21cde8125de28a3e40690eb05136c123f420c05c082",
-        "signature": "405ad6db8aa3d5618c3be21cde8125de28a3e40690eb05136c123f420c05c082",
-        "affectsGlobalScope": false
-      },
       "../node_modules/@types/cookiejar/index.d.ts": {
         "version": "8d48b8f8a377ade8dd1f000625bc276eea067f2529cc9cafdf082d17142107d6",
         "signature": "8d48b8f8a377ade8dd1f000625bc276eea067f2529cc9cafdf082d17142107d6",
-        "affectsGlobalScope": false
-      },
-      "../node_modules/@types/cors/index.d.ts": {
-        "version": "a68969f643e0cb091046a9437b64cb1880a081fc07c70a4717b0edef2a38bc85",
-        "signature": "a68969f643e0cb091046a9437b64cb1880a081fc07c70a4717b0edef2a38bc85",
         "affectsGlobalScope": false
       },
       "../node_modules/@types/cross-spawn/index.d.ts": {
@@ -4619,9 +4604,6 @@
       "../node_modules/@types/connect/index.d.ts": [
         "../node_modules/@types/node/http.d.ts",
         "../node_modules/@types/node/index.d.ts"
-      ],
-      "../node_modules/@types/cors/index.d.ts": [
-        "../node_modules/@types/node/http.d.ts"
       ],
       "../node_modules/@types/cross-spawn/index.d.ts": [
         "../node_modules/@types/node/child_process.d.ts",
@@ -7362,9 +7344,6 @@
         "../node_modules/@types/node/http.d.ts",
         "../node_modules/@types/node/index.d.ts"
       ],
-      "../node_modules/@types/cors/index.d.ts": [
-        "../node_modules/@types/node/http.d.ts"
-      ],
       "../node_modules/@types/cross-spawn/index.d.ts": [
         "../node_modules/@types/node/child_process.d.ts",
         "../node_modules/@types/node/index.d.ts"
@@ -9226,11 +9205,8 @@
       "../node_modules/@types/bcrypt/index.d.ts",
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/bson/index.d.ts",
-      "../node_modules/@types/component-emitter/index.d.ts",
       "../node_modules/@types/connect/index.d.ts",
-      "../node_modules/@types/cookie/index.d.ts",
       "../node_modules/@types/cookiejar/index.d.ts",
-      "../node_modules/@types/cors/index.d.ts",
       "../node_modules/@types/cross-spawn/index.d.ts",
       "../node_modules/@types/debug/index.d.ts",
       "../node_modules/@types/dedent/index.d.ts",
